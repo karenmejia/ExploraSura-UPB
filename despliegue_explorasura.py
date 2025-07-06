@@ -37,13 +37,13 @@ st.title('Prediccion de Clusters predecir de forma automática el clúster al qu
 
 Edad = st.slider('Edad', min_value=0, max_value=111, value=20, step=1)
 Sexo = st.selectbox('Sexo', ['M', 'F'])
-Nivel_Estudios =('Nivel_Estudios', ["''SIN NIVEL EDUCATIVO''","'TECNICA'","'SECUNDARIA'","'PRIMARIA'","'PROFESIONAL'","'ESPECIALIZACION'","'TECNOLOGICA'","'MAESTRIA'","'OTRO'","'DOCTORADO/POSTDOCTORADO'"])
-Regimen = st.selectbox('Regimen', ["'CONTRIBUTIVO'","'SUBSIDIADO'"])
+Nivel_Estudios =('Nivel_Estudios', ["'SIN NIVEL EDUCATIVO'","TECNICA","SECUNDARIA","PRIMARIA","PROFESIONAL","ESPECIALIZACION","TECNOLOGICA","MAESTRIA","OTRO","DOCTORADO/POSTDOCTORADO"])
+Regimen = st.selectbox('Regimen', ["CONTRIBUTIVO","SUBSIDIADO"])
 Regional = st.selectbox('Regional', ["'REGIONAL ANTIOQUIA'","'REGIONAL EJE CAFETERO'","'REGIONAL NORTE'","'REGIONAL CENTRO'","'REGIONAL OCCIDENTE'"])
-Estado_Civil = st.selectbox('Estado_Civil', ["'SOLTERO/A'","'CASADO/A'","'DIVORCIADO/A'","'VIUDO/A'"])
-Nivel_Ingresos = st.selectbox('Nivel_Ingresos', ["'COTIZANTES CON INGRESOS INFERIORES A 2 SMLMV'", "'COTIZANTES CON INGRESOS SUPERIORES A 5 SMLMV'","','COTIZANTES CON INGRESOS ENTRE 2 Y 5 SMLMV'","'NIVEL 1 DEL SISBEN'","'NIVEL 2 DEL SISBEN"])
-Ind_Masa_Corporal = st.selectbox('Ind_Masa_Corporal', ["'BAJO PESO'","'NORMAL'","'SOBREPESO'","'OBESIDAD'"])
-Ind_Ejercicio = st.selectbox('Ind_Ejercico', ["'ND'","'N'","'S'"])
+Estado_Civil = st.selectbox('Estado_Civil', ["'SIN INFORMACION DESDE LA FUENTE'", "'SOLTERO (A)'","'CASADO (A)'","'UNION LIBRE'","'SEPARADO (A)'", "'VIUDO (A)'"])
+Nivel_Ingresos = st.selectbox('Nivel_Ingresos', ["'COTIZANTES CON INGRESOS INFERIORES A 2 SMLMV'", "'COTIZANTES CON INGRESOS ENTRE 2 Y 5 SMLMV'","','NIVEL 1 DEL SISBEN'","'COTIZANTES CON INGRESOS SUPERIORES A 5 SMLMV'","'NIVEL 2 DEL SISBEN"])
+Ind_Masa_Corporal = st.selectbox('Ind_Masa_Corporal', ["SOBREPESO","'PESO NORMAL O SALUDABLE'","OBESIDAD","'BAJO PESO'"])
+Ind_Ejercicio = st.selectbox('Ind_Ejercico', ["ND","N","S"])
 
 #Dataframe
 datos = [[Sexo,Edad,Nivel_Estudios,Regional,Regimen,Nivel_Ingresos,Estado_Civil,Ind_Masa_Corporal,Ind_Ejercicio]]
