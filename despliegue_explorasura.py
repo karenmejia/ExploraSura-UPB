@@ -48,7 +48,7 @@ Ind_Masa_Corporal = st.selectbox('Ind_Masa_Corporal', ["SOBREPESO","'PESO NORMAL
 Ind_Ejercicio = st.selectbox('Ind_Ejercicio', ["ND","N","S"])
  
 #Dataframe
-datos = [[Sexo,Edad,Nivel_Estudios,Regional,Regimen,Nivel_Ingresos,Estado_Civil,Ind_Masa_Corporal,Ind_Ejercicio]]
+datos = [[Edad,Sexo,Nivel_Estudios,Regimen,Regional,Estado_Civil,Nivel_Ingresos,Ind_Masa_Corporal,Ind_Ejercicio]]
 data = pd.DataFrame(datos, columns=['Edad','Sexo','Nivel_Estudios','Regimen','Regional','Estado_Civil','Nivel_Ingresos','Ind_Masa_Corporal','Ind_Ejercicio']) #Dataframe con los mismos nombres de variables
 
 #Se realiza la preparación
