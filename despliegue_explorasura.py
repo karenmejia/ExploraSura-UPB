@@ -34,7 +34,7 @@ modelNN,labelencoder,variables, min_max_scaler = pickle.load(open(filename, 'rb'
 
 import streamlit as st
  
-st.title('Predicción de inversión en una tienda de videojuegos')
+st.title('Predicción de cluster para un nuevo afiliado')
 
 # Los nombres de las opciones de las listas deplegables deben ser exactamente iguales a las categorías en la BD 
 Edad = st.slider('Edad', min_value=0, max_value=111, value=20, step=1)
