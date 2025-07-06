@@ -54,19 +54,9 @@ data.info ()
 #Se realiza la preparación
 data_preparada=data.copy()
 
-data_preparada['Sexo']=data_preparada['Sexo'].astype('category')
-data_preparada['Nivel_Estudios']=data_preparada['Nivel_Estudios'].astype('category')
-data_preparada['Regional']=data_preparada['Regional'].astype('category')
-data_preparada['Regimen']=data_preparada['Regimen'].astype('category')
-data_preparada['Nivel_Ingresos']=data_preparada['Nivel_Ingresos'].astype('category')
-data_preparada['Estado_Civil']=data_preparada['Estado_Civil'].astype('category')
-data_preparada['Ind_Masa_Corporal']=data_preparada['Ind_Masa_Corporal'].astype('category')
-data_preparada['Ind_Ejercicio']=data_preparada['Ind_Ejercicio'].astype('category')
-data_preparada.info()
-
 data_preparada = pd.get_dummies(data_preparada, columns=['Sexo','Regimen', 'Nivel_Estudios','Regional','Nivel_Ingresos',
-                                     'Estado_Civil','Ind_Masa_Corporal',
-                                     'Ind_Ejercicio'], drop_first=False) #En despliegue no se borran dummies, siempre el drop_first va en falso porque nunca se borra dummy
+                                     'Estado_Civil','Ind_Masa_Corporal','Ind_Ejercicio'], drop_first=False) 
+#En despliegue no se borran dummies, siempre el drop_first va en falso porque nunca se borra dummy
 data_preparada.head()
 
 #Se adicionan las columnas faltantes, con el reindex se completa las variables faltantes con zeros
