@@ -56,7 +56,7 @@ data_preparada=data.copy()
 
 #En despliegue drop_first= False
 data_preparada = pd.get_dummies(data_preparada, columns=['Sexo','Regimen', 'Nivel_Estudios','Regional','Nivel_Ingresos',
-                                     'Estado_Civil','Ind_Masa_Corporal','Ind_Ejercicio'], drop_first=False)
+                                     'Estado_Civil','Ind_Masa_Corporal','Ind_Ejercicio'], drop_first=False, dtype=int)
 #En despliegue no se borran dummies, siempre el drop_first va en falso porque nunca se borra dummy
 data_preparada.head()
 
