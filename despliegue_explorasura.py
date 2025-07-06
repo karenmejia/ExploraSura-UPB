@@ -25,8 +25,8 @@ filename = 'modelo_class_red_neuronal.pkl'
 modelNN,labelencoder,variables, min_max_scaler = pickle.load(open(filename, 'rb'))
 
 #Cargamos los datos futuros
-data = pd.read_csv("Datos_futuros_ExploraSura.csv", sep=';')
-data.head()
+#data = pd.read_csv("Datos_futuros_ExploraSura.csv", sep=';')
+#data.head()
 
 #Interfaz gráfica
 # La librería streamlit transcribe el código python a html
