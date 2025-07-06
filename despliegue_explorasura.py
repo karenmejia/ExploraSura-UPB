@@ -33,10 +33,10 @@ modelNN,labelencoder,variables, min_max_scaler = pickle.load(open(filename, 'rb'
 #Se crea interfaz gráfica con streamlit para captura de los datos
 
 import streamlit as st
-
+ 
 st.title('Predicción de inversión en una tienda de videojuegos')
 
-# Los nombres de las opciones de las listas deplegables deben ser exactamente iguales a las categorías en la BD
+# Los nombres de las opciones de las listas deplegables deben ser exactamente iguales a las categorías en la BD 
 Edad = st.slider('Edad', min_value=0, max_value=111, value=20, step=1)
 Sexo = st.selectbox('Sexo', ['M', 'F'])
 Nivel_Estudios =('Nivel_Estudios', ["'SIN NIVEL EDUCATIVO'","TECNICA","SECUNDARIA","PRIMARIA","PROFESIONAL","ESPECIALIZACION","TECNOLOGICA","MAESTRIA","OTRO","DOCTORADO/POSTDOCTORADO"])
@@ -45,11 +45,11 @@ Regional = st.selectbox('Regional', ["'REGIONAL ANTIOQUIA'","'REGIONAL EJE CAFET
 Estado_Civil = st.selectbox('Estado_Civil', ["'SIN INFORMACION DESDE LA FUENTE'", "'SOLTERO (A)'","'CASADO (A)'","'UNION LIBRE'","'SEPARADO (A)'", "'VIUDO (A)'"])
 Nivel_Ingresos = st.selectbox('Nivel_Ingresos', ["'COTIZANTES CON INGRESOS INFERIORES A 2 SMLMV'", "'COTIZANTES CON INGRESOS ENTRE 2 Y 5 SMLMV'","','NIVEL 1 DEL SISBEN'","'COTIZANTES CON INGRESOS SUPERIORES A 5 SMLMV'","'NIVEL 2 DEL SISBEN"])
 Ind_Masa_Corporal = st.selectbox('Ind_Masa_Corporal', ["SOBREPESO","'PESO NORMAL O SALUDABLE'","OBESIDAD","'BAJO PESO'"])
-Ind_Ejercicio = st.selectbox('Ind_Ejercico', ["ND","N","S"])
-
+Ind_Ejercicio = st.selectbox('Ind_Ejercicio', ["ND","N","S"])
+ 
 #Dataframe
 datos = [[Sexo,Edad,Nivel_Estudios,Regional,Regimen,Nivel_Ingresos,Estado_Civil,Ind_Masa_Corporal,Ind_Ejercicio]]
-data = pd.DataFrame(datos, columns=['Edad','Sexo','Nivel_Estudios','Regimen','Regional','Estado_Civil','Nivel_Ingresos','Ind_Masa_Corporal','Ind_Ejercico']) #Dataframe con los mismos nombres de variables
+data = pd.DataFrame(datos, columns=['Edad','Sexo','Nivel_Estudios','Regimen','Regional','Estado_Civil','Nivel_Ingresos','Ind_Masa_Corporal','Ind_Ejercicio']) #Dataframe con los mismos nombres de variables
 
 #Se realiza la preparación
 data_preparada=data.copy()
