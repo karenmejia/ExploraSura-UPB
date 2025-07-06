@@ -42,7 +42,7 @@ Regimen = st.selectbox('Regimen', ["'CONTRIBUTIVO'","'SUBSIDIADO'"])
 Regional = st.selectbox('Regional', ["'REGIONAL ANTIOQUIA'","'REGIONAL EJE CAFETERO'","'REGIONAL NORTE'","'REGIONAL CENTRO'","'REGIONAL OCCIDENTE'"])
 Estado_Civil = st.selectbox('Estado_Civil', ["'SOLTERO/A'","'CASADO/A'","'DIVORCIADO/A'","'VIUDO/A'"])
 Nivel_Ingresos = st.selectbox('Nivel_Ingresos', ["'COTIZANTES CON INGRESOS INFERIORES A 2 SMLMV'", "'COTIZANTES CON INGRESOS SUPERIORES A 5 SMLMV'","','COTIZANTES CON INGRESOS ENTRE 2 Y 5 SMLMV'","'NIVEL 1 DEL SISBEN'","'NIVEL 2 DEL SISBEN"])
-Ind_Masa_Corporal = st.selectbox('Ind_Masa_Corporal', ["'DESNUTRIDO'","'NORMAL'","'SOBREPESO'","'OBESIDAD'"])
+Ind_Masa_Corporal = st.selectbox('Ind_Masa_Corporal', ["'BAJO PESO'","'NORMAL'","'SOBREPESO'","'OBESIDAD'"])
 Ind_Ejercicio = st.selectbox('Ind_Ejercico', ["'ND'","'N'","'S'"])
 
 #Dataframe
